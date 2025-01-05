@@ -11,3 +11,7 @@ This are notes about supabase tools and apis
 ```
 SELECT * FROM storage.objects
 ```
++ To fetch the `buckets` you can use the following query
+```
+SELECT * FROM storage.buckets
+```
