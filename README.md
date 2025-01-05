@@ -6,7 +6,8 @@ This are notes about supabase tools and apis
 ## Database
 
 ## Storage
-+ https://supabase.com/docs/guides/storage
++ Docs: https://supabase.com/docs/guides/storage
++ Schema: https://supabase.com/docs/guides/storage/schema/design
 + To test RLS in storage, go to the `SQL Editor` and run queries against `storage.object`. You can then use the `Roles` button to impersonate and test your RLS.
 ```
 SELECT * FROM storage.objects
