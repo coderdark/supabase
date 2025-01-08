@@ -14,7 +14,7 @@ as PERMISSIVE -- RESTRICTIVE (Policies are combined using the AND boolean operat
 for SELECT --Type of SQL queries: SELECT INSERT, UPDATE, DELETE
 to public
 using (
-  true
+  (select auth.uid()) = user_id -- this expression returns a boolean, if the table row has a user_id field that is equal to the authenticated user (get user uid by running this function auth.uid()) then the row(s) is returned.
 )
 ```
 
